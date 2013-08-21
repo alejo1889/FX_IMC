@@ -3,7 +3,7 @@
 <head>
         <title>Calculadora deIMC</title>
     
-    <!-- Main Stylesheet -->
+    <!-- Vinculacion de las Hojas de Estilo -->
     <link rel="stylesheet" href="css/lungo.css">
     <link rel="stylesheet" href="css/lungo.icon.css">
     <link rel="stylesheet" href="css/lungo.icon.brand.css">
@@ -13,12 +13,14 @@
 
 <body class="app">
     
-    <!-- Inicio de tu app -->
+    <!-- Inicio de la app -->
     <section id="main" data-transition="slide">
         
+        <!--Encabezado-->
         <header data-title="Calculadora de IMC">
         </header>
         
+        <!--Articulo principal-->
         <article id="main-article" class="active">
             <div align="center">
                 <img src="/img/imc.png" alt="IMC" width="240" height="70">
@@ -36,7 +38,7 @@
                
             </div> 
         </article>
-        
+        <!--Articulo segunda pantalla-->
         <article id="info-article">
            <p align="justify"> <br> El Indice de Masa Corporal es un &iacute;ndice del peso de una persona en relaci&oacute;n con su altura. A pesar de que no hace distinci&oacute;n entre los componentes grasos y no grasos de la masa corporal total, &eacute;ste es el m&eacute;todo m&aacute;s pr&aacute;ctico para evaluar el grado de riesgo asociado con la obesidad.</p><br>
            <p align="justify"> La siguiente tabla relaciona el Indice de Masa Muscular con el estado nutricional</p></br>
@@ -74,6 +76,7 @@
             </div>
         </article>
         
+        <!--Barra de navegacion en la parte inferior-->
         <footer>
             <nav>
                 <a href="#main-article" data-icon="home" class="active" data-router="article"></a>
@@ -81,13 +84,14 @@
             </nav>
         </footer>
     </section>
-    <!-- Fin de tu app -->
+    <!-- Fin de la app -->
     
     <!-- Webapp libraries -->
     <script src="js/base.js"></script>
-    <!-- Lungo - Dependencies -->
+    <!-- Dependencias Lungo-->
     <script src="js/quo.js"></script>
     <script src="js/lungo.js"></script>
+    <!--Script principal -->
     <script src="js/calculo.js"></script>
     <!-- Lungo - Sandbox App -->
     <script>
