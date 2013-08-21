@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+        <title>Calculadora deIMC</title>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/lungo.css">
+    <link rel="stylesheet" href="css/lungo.icon.css">
+    <link rel="stylesheet" href="css/lungo.icon.brand.css">
+    <link rel="stylesheet" href="css/theme.lungo.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+
+<body class="app">
+    
+    <!-- Inicio de tu app -->
+    <section id="main" data-transition="slide">
+        
+        <header data-title="Calculadora de IMC">
+        </header>
+        
+        <article id="main-article" class="active">
+            <div align="center">
+                <img src="/img/imc.png" alt="IMC" width="240" height="70">
+            </div>
+            <div class="form">
+                <br><label >Introduzca su peso (Kg)</label> 
+                    <input type="number" id="peso"></input>
+                <br><label> Introduzca su estatura (cm)</label>
+                    <input type="number" id="alt"></input>
+                <div align="center"> 
+                    <button  type="button" onclick="calcular()">Calcular</button>
+                    <button  type="button" onclick="limpiar()">Limpiar</button>
+                    <h1 align="center" id="respuesta"><br>Su IMC es :  </h1>      
+                </div>
+               
+            </div> 
+        </article>
+        
+        <article id="info-article">
+           <p align="justify"> <br> El Indice de Masa Corporal es un &iacute;ndice del peso de una persona en relaci&oacute;n con su altura. A pesar de que no hace distinci&oacute;n entre los componentes grasos y no grasos de la masa corporal total, &eacute;ste es el m&eacute;todo m&aacute;s pr&aacute;ctico para evaluar el grado de riesgo asociado con la obesidad.</p><br>
+           <p align="justify"> La siguiente tabla relaciona el Indice de Masa Muscular con el estado nutricional</p></br>
+           <div align="center">
+            <table>
+            <tr>
+                <td>Valor de IMC&nbsp;</td>
+                <td>&nbsp;Estado Nutricional</td>
+            </tr>
+            <tr>
+                <td> &lt; 18,5 </td>
+                <td> Bajo de Peso</td>
+            </tr>
+            <tr>
+                <td> 18,5 a 24,9 </td>
+                <td> Normal</td>
+            </tr>
+            <tr>
+                <td> 25 a 29,9 </td>
+                <td> Sobrepeso</td>
+            </tr>
+            <tr>
+                <td> 30 a 34,9 </td>
+                <td> Obesidad Tipo I</td>
+            </tr>
+            <tr>
+                <td> 35 a 39,9 </td>
+                <td> Obesidad Tipo II</td>
+            </tr>
+            <tr>
+                <td> &gt; 40 </td>
+                <td> Obesidad Tipo III</td>
+            </tr>
+            </table>
+            </div>
+        </article>
+        
+        <footer>
+            <nav>
+                <a href="#main-article" data-icon="home" class="active" data-router="article"></a>
+                <a href="#info-article" data-icon="info" data-router="article"></a>
+            </nav>
+        </footer>
+    </section>
+    <!-- Fin de tu app -->
+    
+    <!-- Webapp libraries -->
+    <script src="js/base.js"></script>
+    <!-- Lungo - Dependencies -->
+    <script src="js/quo.js"></script>
+    <script src="js/lungo.js"></script>
+    <script src="js/calculo.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Practica 2: Calculadora IMC'
+        });
+    </script>
+</body>
+</html>

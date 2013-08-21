@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "name": "Calculadora IMC ",
+  "launch_path": "index.html",
+  "description": "Aplicación para el Calculo del Indice de Masa Corporal",
+  "icons": {
+        "60": "/img/logo60.png",
+        "128": "/img/logo128.png"
+  },
+  "developer": {
+    "name": "Alejandro Sotelo",
+    "url": "http://"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "es"
+}
