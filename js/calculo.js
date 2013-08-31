@@ -1,4 +1,4 @@
-
+  //Funcion para calcular el IMC
     function calcular()
         {
         var p = document.getElementById("peso").value;
@@ -27,7 +27,8 @@
          }
         document.getElementById("respuesta").innerHTML="<br>Su IMC es : "+r+"<br>"+estado;
         }}
-
+        
+//Funcion para limpiar el formulario
     function limpiar()
         {
         document.getElementById("peso").value="";
