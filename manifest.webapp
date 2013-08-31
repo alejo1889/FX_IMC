@@ -3,6 +3,7 @@
   "name": "Calculadora IMC ",
   "launch_path": "index.html",
   "description": "Aplicación para el Calculo del Indice de Masa Corporal",
+  "orientation": ["landscape"],
   "icons": {
         "60": "/img/logo60.png",
         "128": "/img/logo128.png"
